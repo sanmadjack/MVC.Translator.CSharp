@@ -34,7 +34,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>communication.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>communication.translator.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,7 +46,7 @@
     <Compile Include="TranslatingRequestHandler.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="communication.snk" />
+    <None Include="communication.translator.snk" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Communication\Communication.csproj">
