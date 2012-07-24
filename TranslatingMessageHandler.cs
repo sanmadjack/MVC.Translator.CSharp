@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Translator;
+using MVC.Communication;
 namespace Communication.Translator {
     public class TranslatingMessageHandler : MessageHandler {
         public new static ResponseType SendException(Exception e) {

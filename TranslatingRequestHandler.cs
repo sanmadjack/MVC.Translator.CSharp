@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using Translator;
+using MVC.Communication;
+
 namespace Communication.Translator {
     public class TranslatingRequestHandler : RequestHandler {
 

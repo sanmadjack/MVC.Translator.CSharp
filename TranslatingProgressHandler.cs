@@ -1,4 +1,6 @@
 ﻿using System;
+using MVC.Communication;
+
 using Translator;
 namespace Communication.Translator {
     public class TranslatingProgressHandler : ProgressHandler {

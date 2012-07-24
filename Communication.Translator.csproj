@@ -51,9 +51,9 @@
     <None Include="communication.translator.snk" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Communication\Communication.csproj">
-      <Project>{23E0FE77-1F5E-4B67-8F42-52F46989C4D1}</Project>
-      <Name>Communication</Name>
+    <ProjectReference Include="..\MVC\MVC.csproj">
+      <Project>{4670BE82-DDDF-4614-BE3B-FB5DE4226D93}</Project>
+      <Name>MVC</Name>
     </ProjectReference>
     <ProjectReference Include="..\Translator\Translator.csproj">
       <Project>{1B233D4E-7DF0-4608-A0D5-94D416B5B359}</Project>
