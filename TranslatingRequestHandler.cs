@@ -6,18 +6,30 @@ namespace Communication.Translator {
     public class TranslatingRequestHandler : RequestHandler {
 
         public static RequestReply Request(RequestType type, string name, params string[] variables) {
-
-            return TranslatingRequestHandler.Request(type, name, null, variables);
+            return TranslatingRequestHandler.Request(type, name,null, variables);
         }
+
+        public static RequestReply Request(RequestType type, string name, bool suppressable, params string[] variables) {
+            return TranslatingRequestHandler.Request(type, name, null, suppressable, variables);
+        }
+
+
 
         public static RequestReply Request(RequestType type, string name, List<string> choices, params string[] variables) {
             return TranslatingRequestHandler.Request(type, name, null, choices, variables);
         }
+        public static RequestReply Request(RequestType type, string name, List<string> choices, bool suppressable, params string[] variables) {
+            return TranslatingRequestHandler.Request(type, name, null, choices, variables);
+        }
 
         public static RequestReply Request(RequestType type, string name, string default_choice, List<string> choices, params string[] variables) {
+            return Request(type, name, default_choice, choices, false, variables);
+        }
+
+        public static RequestReply Request(RequestType type, string name, string default_choice, List<string> choices, bool suppressable, params string[] variables) {
             StringCollection col = Strings.getStrings(name);
 
-            return RequestHandler.Request(type, col[StringType.Title].interpret(), col[StringType.Message].interpret(variables), choices, default_choice);
+            return RequestHandler.Request(type, col[StringType.Title].interpret(), col[StringType.Message].interpret(variables), choices, default_choice, suppressable);
 
         }
     }
