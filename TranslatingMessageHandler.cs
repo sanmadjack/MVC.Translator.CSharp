@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Translator;
 using MVC.Communication;
-namespace Communication.Translator {
+namespace MVC.Translator {
     public class TranslatingMessageHandler : MessageHandler {
         public new static ResponseType SendException(Exception e) {
             if (e.GetType() == typeof(TranslateableException)) {

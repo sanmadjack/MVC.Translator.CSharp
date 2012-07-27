@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Communication.Translator")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("MVC.Translator")]
+[assembly: AssemblyDescription("Translator classes for MVC")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Matthew Barbour")]
-[assembly: AssemblyProduct("Communication.Translator")]
+[assembly: AssemblyProduct("MVC.Translator")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("1eeb354f-c163-4917-a7d8-ea3893980b10")]
+[assembly: Guid("dc3d704e-38b0-4c1a-b2e1-df07e8212f18")]
 
 // Version information for an assembly consists of the following four values:
 //

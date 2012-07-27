@@ -5,15 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{DAEA22A4-5568-4132-8BA8-89D1B50A2C10}</ProjectGuid>
+    <ProjectGuid>{A0502934-F0B8-40ED-9849-E4392CE37AF4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Communication.Translator</RootNamespace>
-    <AssemblyName>Communication.Translator</AssemblyName>
+    <RootNamespace>MVC.Translator</RootNamespace>
+    <AssemblyName>MVC.Translator</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -36,19 +34,22 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>communication.translator.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>MVC.Translator.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TranslatingMessageHandler.cs" />
     <Compile Include="TranslatingProgressHandler.cs" />
     <Compile Include="TranslatingRequestHandler.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="communication.translator.snk" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MVC\MVC.csproj">
@@ -59,6 +60,9 @@
       <Project>{1B233D4E-7DF0-4608-A0D5-94D416B5B359}</Project>
       <Name>Translator</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MVC.Translator.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
