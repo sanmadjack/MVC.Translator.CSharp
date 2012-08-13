@@ -10,7 +10,6 @@ namespace MVC.Translator {
                 throw new StringNotFoundException(name, StringType.Message);
             }
             ProgressHandler.message = line;
-
         }
     }
 }

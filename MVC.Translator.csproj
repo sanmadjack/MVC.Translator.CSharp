@@ -50,6 +50,7 @@
     <Compile Include="TranslatingMessageHandler.cs" />
     <Compile Include="TranslatingProgressHandler.cs" />
     <Compile Include="TranslatingRequestHandler.cs" />
+    <Compile Include="TrenslateableProgressUpdatedEventArgs.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MVC\MVC.csproj">
