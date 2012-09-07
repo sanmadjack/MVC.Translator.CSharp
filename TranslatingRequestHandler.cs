@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
-using Translator;
 using MVC.Communication;
+using Translator;
 
 namespace MVC.Translator {
     public class TranslatingRequestHandler : RequestHandler {
 
         public static RequestReply Request(RequestType type, string name, params string[] variables) {
-            return TranslatingRequestHandler.Request(type, name,null, variables);
+            return TranslatingRequestHandler.Request(type, name, null, variables);
         }
 
         public static RequestReply Request(RequestType type, string name, bool suppressable, params string[] variables) {
@@ -29,14 +29,14 @@ namespace MVC.Translator {
         public static RequestReply Request(RequestType type, string name, string default_choice, List<string> choices, bool suppressable, params string[] variables) {
             StringCollection col = Strings.getStrings(name);
             string title, message;
-            if(col.ContainsKey(StringType.Title))
+            if (col.ContainsKey(StringType.Title))
                 title = col[StringType.Title].interpret(variables);
-            else 
+            else
                 title = name;
 
-            if(col.ContainsKey(StringType.Message))
+            if (col.ContainsKey(StringType.Message))
                 message = col[StringType.Message].interpret(variables);
-            else 
+            else
                 message = name;
 
 

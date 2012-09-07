@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Translator;
 using MVC.Communication;
+using Translator;
 namespace MVC.Translator {
     public class TranslatingMessageHandler : MessageHandler {
         public new static ResponseType SendException(Exception e) {
@@ -14,7 +14,7 @@ namespace MVC.Translator {
                     TranslateableException ex = e as TranslateableException;
                     StringCollection strings = Strings.getStrings(e.Message);
                     return SendMessage(strings[StringType.Title].interpret(ex.variables),
-                        strings[StringType.Message].interpret(ex.variables), MessageTypes.Error, e,false);
+                        strings[StringType.Message].interpret(ex.variables), MessageTypes.Error, e, false);
                 } catch (KeyNotFoundException) {
                     return SendMessage("Translater error", "The string " + e.Message + " could not be found", MessageTypes.Error, e, false);
                 }
